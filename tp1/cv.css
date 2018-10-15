@@ -3,6 +3,25 @@
         background-color:gray;            
                   
       }
+      @media only screen and (max-width: 300px) {
+        body {
+            background-color: rgb(149, 211, 231);
+        }}
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: rgb(97, 122, 131);
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: rgb(28, 90, 110);
+            }
+        }
+        @media only screen and (max-width: 900px) {
+            body {
+                background-color: rgb(69, 41, 114);
+            }
+        }
 
       table{
         background-color:white;
