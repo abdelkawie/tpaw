@@ -15,3 +15,7 @@
       a:hover { 
         background-color: orange;
     }
+    body tr:nth-child(2n+1){
+
+        background-color:rgb(210, 245, 10);
+    }
