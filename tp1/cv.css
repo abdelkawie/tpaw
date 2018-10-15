@@ -18,5 +18,8 @@
 
     tbody tr:hover{
 
-        background-color: rgb(31, 21, 2);
+        background-color: rgb(194, 174, 137);
+    }
+    img:hover { 
+        white-space: pre-line;
     }
