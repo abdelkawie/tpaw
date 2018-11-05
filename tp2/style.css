@@ -11,13 +11,14 @@ body{
 background-color: green;
 padding: 5px;
 color: white;
+display : none ;
 }
 #error{
     background-color:pink;
     padding: 5px;
-
+    
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    
+    display : none ;
     }
