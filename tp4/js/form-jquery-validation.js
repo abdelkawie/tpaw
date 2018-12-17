@@ -42,6 +42,18 @@ $( document ).ready(function(){
         event.preventDefault();
         getLocation();
      });
+     
+     $(document).ready(function(){
+        $("#name").keypress(function(){
+          $("#span1").text($("#name").val().length);
+        });
+        $("#name").keyup(function(){
+            $("#span1").text($("#name").val().length);
+          });
+          $("#name").keydown(function(){
+            $("#span1").text($("#name").val().length);
+          });
+      });
   
 
  });
