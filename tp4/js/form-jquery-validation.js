@@ -7,10 +7,7 @@ $( document ).ready(function(){
      $("#submit").on("click",function(event){
        
         event.preventDefault();
-        if($("#adresse").val().length < 5){
-            $(".modal-body").text("adresse requise");
-            $("#myModal").modal("show");
-        }else  if($("#name").val().length < 5){
+       if($("#name").val().length < 5){
             $(".modal-body").text("nom requis");
             $("#myModal").modal("show");
         }else  if($("#firstname").val().length < 5){
@@ -27,15 +24,26 @@ $( document ).ready(function(){
         }
 
         else{
-            $(".modal-title").html("Bienvenue " + $("#name").val() );
-            
-            $(".modal-body").html(" vous etes né le  : " + $("#birth").val());
-            $(".modal-body").append("<img src = 'https://maps.googleapis.com/maps/api/staticmap?markers="+ $("#adresse").val()+
-            "&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg' >");
-            $('#myModal').modal("show");
+           
+            contactStore.add($("#name").val(),$("#firstname").val(),$("#birth").val(),$("#adresse").val(),$("#mail").val());
+            ajouterElement();
+
             }
         
      });
+
+     function ajouterElement(){
+        var lastElement = contactStore.getList()[contactStore.getList().length -1]; 
+        var newElement = "<tr> <td> " + lastElement.name +"</td> <td>" +lastElement.firstname +"</td>"
+        +"<td>"+ lastElement.date +"</td>"
+        +"<td>"+ lastElement.adress
+       +" </td>"
+        +"<td>"
+        +lastElement.mail
+        +"</td>"
+   +" </tr>";
+   $( '#maTable' ).append( newElement );
+     }
 
      $("#gps").on("click",function(event){
 
@@ -55,5 +63,6 @@ $( document ).ready(function(){
           });
       });
   
+     
 
  });
