@@ -41,14 +41,15 @@ const appRoutes: Routes = [
     MeteoDetailComponent
   ],
   imports: [
-    
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    RouterModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
