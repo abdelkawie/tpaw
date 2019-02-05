@@ -1,4 +1,4 @@
-import { FormsModule } from '@angular/forms';
+/*import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,7 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MeteoComponent } from './meteo/meteo.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MeteoDetailComponent } from './meteo-detail/meteo-detail.component';*/
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { MeteoComponent } from './meteo/meteo.component';
+import { RouterModule, Routes } from '@angular/router';
 import { MeteoDetailComponent } from './meteo-detail/meteo-detail.component';
+import {MeteoService} from './services/meteo.service';
 
 
 const appRoutes: Routes = [
