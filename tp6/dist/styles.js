@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\joker-pc\Documents\GitHub\tpaw\tp6\meteo-angular\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\joker-pc\Documents\GitHub\tpaw\TP6V2\meteo-angular\src\styles.css */"./src/styles.css");
 
 
 /***/ })
