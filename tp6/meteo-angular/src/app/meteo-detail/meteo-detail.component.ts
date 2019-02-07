@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import {MeteoService} from '../services/meteo.service'
 import { DatePipe } from '@angular/common';
 
+
 @Component({
   selector: 'app-meteo-detail',
   templateUrl: './meteo-detail.component.html',
@@ -17,11 +18,12 @@ export class MeteoDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private meteoService: MeteoService,
     private location: Location
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.getMeteo();
   }
+
   getMeteo(): void {
     const name = this.route.snapshot.paramMap.get('name');
     console.log('getmeteo',name);

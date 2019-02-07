@@ -3,12 +3,11 @@ import { MeteoItem } from '../meteoItem';
 //import { Observable } from 'rxjs/Observable';
 //import { of } from 'rxjs/observable/of';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class MeteoService {
 
   constructor() { }
+
 
   getMeteo(name: string): Promise<any> {
     console.log('from service', name);
